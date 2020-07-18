@@ -16,7 +16,9 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
+  <div class="post-header">
+      <h1>Posts</h1>
+  </div>
 
   <ul class="posts">
     {% for post in site.posts %}

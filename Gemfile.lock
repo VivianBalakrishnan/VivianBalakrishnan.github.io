@@ -6,7 +6,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
-    addressable (2.5.2)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 4.0)
     coffee-script (2.4.1)
       coffee-script-source
@@ -76,7 +76,7 @@ GEM
       rouge (= 2.2.1)
       terminal-table (~> 1.4)
     github-pages-health-check (1.8.1)
-      addressable (~> 2.3)
+      addressable (~> 2.8.0)
       dnsruby (~> 1.60)
       octokit (~> 4.0)
       public_suffix (~> 2.0)

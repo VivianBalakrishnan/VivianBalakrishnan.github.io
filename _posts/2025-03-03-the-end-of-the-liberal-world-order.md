@@ -6,6 +6,8 @@ date: "2025-03-03"
 
 <b>The end of the liberal world order</b>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WKEBLhB-vV8?si=8TmVvS0HspMYXNK2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 Speech delivered in Parliament on 3 March 2025
 
 This is the 10th time that I am addressing the Committee of Supply (COS) as the Minister for Foreign Affairs, and I have never seen the world more disrupted, more volatile, or more dangerous. So, this is a more sombre, careful and brutally frank message that I am delivering this year. The common thread in all the interventions so far has been this big question: Has the post-WWII liberal world order come to an end? This is a world order which has prevailed for 80 years. In 2025, Singapore celebrates our 60th anniversary. It is also the 80th anniversary of the end of WWII. In these six decades, successive generations of hardworking and disciplined Singaporeans have built up our tiny city state into an outstanding beacon of economic and social success. That we did so without any natural resources or past fiscal reserves is all the more remarkable.

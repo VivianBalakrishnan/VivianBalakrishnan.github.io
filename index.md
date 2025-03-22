@@ -12,10 +12,8 @@ layout: default
 
       <div class="wrap">
 
-      <a class="twitter-timeline" href="https://twitter.com/VivianBala?ref_src=twsrc%5Etfw">Tweets by VivianBala</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="twitter-timeline" href="https://twitter.com/VivianBala?ref_src=twsrc%5Etfw" data-tweet-limit="3">Tweets by VivianBala</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-
-      <a class="twitter-timeline" href="https://twitter.com/VivianBala" data-tweet-limit="3">Tweets by VivianBala</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
 </body>
 </html> 

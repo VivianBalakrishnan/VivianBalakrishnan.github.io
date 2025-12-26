@@ -1,6 +1,6 @@
 ---
 title: Family history and values
-author: admin
+author: Vivian Balakrishnan
 layout: page
 order: 35
 ---

@@ -1,0 +1,13 @@
+baseURL: http://Vivian.Balakrishnan.Sg
+disablePathToLower: true
+languageCode: en-us
+title: Vivian Balakrishnan
+theme: ananke
+
+ignoreLogs:
+  - warning-goldmark-raw-html
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

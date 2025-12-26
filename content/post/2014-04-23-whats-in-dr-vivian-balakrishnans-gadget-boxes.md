@@ -8,7 +8,7 @@ tags:
 - Arduino
 - Lego
 - LittleBits
-title: 'What&#8217;s in&#8230; Dr Vivian Balakrishnan&#8217;s gadget boxes'
+title: "What's in Dr Vivian Balakrishnan's gadget boxes"
 url: /2014/04/23/whats-in-dr-vivian-balakrishnans-gadget-boxes/
 ---
 <p>By day, he has to deal with the haze, floods and other acts of God, but by night, Environment and Water Resources Minister Vivian Balakrishnan is a self-confessed techie who fixes his own gadgets.</p>

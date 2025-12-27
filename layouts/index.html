@@ -1,4 +1,5 @@
 {{ define "main" }}
+  {{ $paginator := .Paginate (where .Site.RegularPages "Section" "post") }}
 <article class="pa3 pa4-ns nested-copy-line-height">
 
   {{ if site.Params.page_links.enabled }}

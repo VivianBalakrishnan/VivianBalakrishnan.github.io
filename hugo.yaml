@@ -11,3 +11,23 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+
+pagination:
+  pagerSize: 6
+
+params:
+  text_color: "mid-gray"
+
+  page_links:
+    enabled: true
+    limit: 5
+  
+  facebook:
+    enabled: true         # Set false to hide the block
+    page: "Vivian.Balakrishnan.Sg"   # Facebook page username
+    locale: "en_US"       # SDK locale
+    width: 500
+    height: 500
+    smallHeader: false
+    hideCover: false
+    showFacepile: true

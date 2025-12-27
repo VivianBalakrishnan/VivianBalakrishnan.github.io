@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Vivian Balakrishnan</title>
+    <link>http://localhost:1313/page/</link>
+    <description>Recent content in Pages on Vivian Balakrishnan</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CV</title>
+      <link>http://localhost:1313/page/about-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/page/about-2/</guid>
+      <description>&lt;p&gt;Vivian Balakrishnan is the Foreign Minister of  Singapore. He is also the Minister-in-charge of the Smart Nation initiative.&lt;/p&gt;&#xA;&lt;p&gt;He has been a Member of Parliament since 2001. He has previously served as the Minister for the Environment and Water Resources; Minister for Community Development, Youth and Sports; 2nd Minister for Trade and Industry; Minister responsible for Entrepreneurship; 2nd Minister for Information Communications and the Arts; and Minister of State for National Development.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

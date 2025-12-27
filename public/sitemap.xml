@@ -781,5 +781,9 @@
   </url><url>
     <loc>http://localhost:1313/2010/04/01/being-a-dad-for-life/</loc>
     <lastmod>2010-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/page/about-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/page/</loc>
   </url>
 </urlset>

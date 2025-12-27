@@ -1,0 +1,28 @@
+{{ with site.Params.facebook }}
+{{ if .enabled }}
+<div id="fb-root"></div>
+
+<div class="fb-page"
+     data-href="https://www.facebook.com/{{ .page }}"
+     data-tabs="timeline"
+     data-width="{{ .width }}"
+     data-height="{{ .height }}"
+     data-small-header="{{ .smallHeader }}"
+     data-adapt-container-width="true"
+     data-hide-cover="{{ .hideCover }}"
+     data-show-facepile="{{ .showFacepile }}">
+  <blockquote cite="https://www.facebook.com/{{ .page }}" class="fb-xfbml-parse-ignore">
+    <a href="https://www.facebook.com/{{ .page }}">{{ .page }}</a>
+  </blockquote>
+</div>
+
+<script async defer crossorigin="anonymous" 
+        src="https://connect.facebook.net/{{ .locale }}/sdk.js"></script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({ xfbml: true, version: 'v18.0' });
+  };
+</script>
+{{ end }}
+{{ end }}

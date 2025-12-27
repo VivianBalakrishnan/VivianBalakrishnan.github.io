@@ -1,5 +1,11 @@
+{{ $posts := (.Site.GetPage "section" "post").Paginator.Pages }}
+
 <section class="flex-ns mt5 flex-wrap justify-around">
+  {{/*
   {{ range .Paginator.Pages }}
+  */}}
+  
+  {{ range $posts }}
     <div class="w-100 w-30-l mb4 relative bg-white">
       {{ .Render "summary" }}
     </div>

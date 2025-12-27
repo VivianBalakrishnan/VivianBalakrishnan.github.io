@@ -7,8 +7,7 @@ weight: 50
 
 
 
-*	Sudoku Solver translated into Javascript from [original code in C++](https://drive.google.com/drive/folders/0B2G2LjIu7WbdfjhaUmVzc1lCR2hUdk5fZllCOHdtbFItbU5qYzdqZGVxdmlnRkJyYVQ4VU0)
-*		by Lee Hsien Loong
+*	Sudoku Solver translated into Javascript from [original code in C++](https://drive.google.com/drive/folders/0B2G2LjIu7WbdfjhaUmVzc1lCR2hUdk5fZllCOHdtbFItbU5qYzdqZGVxdmlnRkJyYVQ4VU0) by Lee Hsien Loong
 *	The MIT License (MIT)
 *	Copyright (c) 2015 Vivian Balakrishnan
 

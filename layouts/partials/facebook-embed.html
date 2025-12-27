@@ -2,27 +2,39 @@
 {{ if .enabled }}
 <div id="fb-root"></div>
 
-<div class="fb-page"
-     data-href="https://www.facebook.com/{{ .page }}"
-     data-tabs="timeline"
-     data-width="{{ .width }}"
-     data-height="{{ .height }}"
-     data-small-header="{{ .smallHeader }}"
-     data-adapt-container-width="true"
-     data-hide-cover="{{ .hideCover }}"
-     data-show-facepile="{{ .showFacepile }}">
-  <blockquote cite="https://www.facebook.com/{{ .page }}" class="fb-xfbml-parse-ignore">
-    <a href="https://www.facebook.com/{{ .page }}">{{ .page }}</a>
-  </blockquote>
+<!-- Responsive container -->
+<div style="text-align:center; padding:2rem 0;">
+  <div class="fb-page"
+       style="margin:0 auto; max-width:{{ .max_width }}px; width:100%; min-height:{{ .min_height }}px;"
+       data-href="https://www.facebook.com/{{ .page }}"
+       data-tabs="timeline"
+       data-width="{{ .max_width }}"
+       data-height="{{ .min_height }}"
+       data-small-header="{{ .smallHeader }}"
+       data-adapt-container-width="true"
+       data-hide-cover="{{ .hideCover }}"
+       data-show-facepile="{{ .showFacepile }}">
+    <blockquote cite="https://www.facebook.com/{{ .page }}" class="fb-xfbml-parse-ignore">
+      <a href="https://www.facebook.com/{{ .page }}">{{ .page }}</a>
+    </blockquote>
+  </div>
 </div>
 
-<script async defer crossorigin="anonymous" 
+<script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/{{ .locale }}/sdk.js"></script>
 
 <script>
   window.fbAsyncInit = function() {
     FB.init({ xfbml: true, version: 'v18.0' });
+    FB.XFBML.parse(); // ensure re-render if container size changes
   };
+
+  // Optional: re-parse on window resize for responsive height
+  window.addEventListener('resize', function() {
+    if (typeof FB !== 'undefined' && FB.XFBML) {
+      FB.XFBML.parse();
+    }
+  });
 </script>
 {{ end }}
 {{ end }}

@@ -111,6 +111,211 @@
 
         </div>
       
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Pages</span>
+    <h1 class="f3 near-black">
+      <a href="/page/family-history-and-values/" class="link black dim">
+        Family history and values
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>This is an excerpt of a speech I made in Parliament on 5 March 2008. It explains how my values and attitudes have been shaped by my mother&#8217;s history. I must confess that it shapes my approach to policy.</p>
+<p> </p>
+<p> </p>
+<p>First, a personal story – about 80 years ago, in fact, exactly 80 years ago, a young man on a business trip to China fell ill and passed away. That young man was my grandfather, my mum&#8217;s father. When he passed away 80 years ago, he left behind a young widow. This young widow had two children and was on the verge of delivering her third child, my mum. You can imagine the deep grief, sorrow, fear, helplessness and despair of a young widow, losing a young husband and about to deliver her third child.</p>
+    </div>
+    <a href="/page/family-history-and-values/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Pages</span>
+    <h1 class="f3 near-black">
+      <a href="/page/why-politics/" class="link black dim">
+        Why politics?
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <p>In October 2001, I was introduced as a candidate for the People&#8217;s Action Party in the November 2001 election. This was the statement I made to the media at that time. From time to time, I re-read it and check that I have stayed true to the cause.</p>
+<p>My decision to enter party politics has been a very difficult one, made after intense soul searching. I have spent most of my adult life being sceptical of the PAP. I have also been publicly critical of some government policies in the past. It would be hypocritical for me to pretend that these objections have suddenly evaporated.</p>
+    </div>
+    <a href="/page/why-politics/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
+        <div class="w-100 w-30-l mb4 relative bg-white">
+          <div class="w-100 mb4 nested-copy-line-height relative bg-white">
+  <div class="mb3 pa4 gray overflow-hidden bg-white">
+    <span class="f6 db">Pages</span>
+    <h1 class="f3 near-black">
+      <a href="/page/sudoku/" class="link black dim">
+        Sudoku
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      <ul>
+<li>Sudoku Solver translated into Javascript from <a href="https://drive.google.com/drive/folders/0B2G2LjIu7WbdfjhaUmVzc1lCR2hUdk5fZllCOHdtbFItbU5qYzdqZGVxdmlnRkJyYVQ4VU0">original code in C++</a></li>
+<li>
+<pre><code>  by Lee Hsien Loong
+</code></pre>
+</li>
+<li>The MIT License (MIT)</li>
+<li>Copyright (c) 2015 Vivian Balakrishnan</li>
+</ul>
+<style>
+    p { text-align: left; }
+    table { border: 2px solid #000; border-collapse: collapse;
+            margin-left: auto; margin-right: auto; }
+    input { border: 2px solid #ccc; }
+</style>
+<script type="text/javascript">
+
+
+  BOARD_SIZE = 9;         // Width and height of the SuDoku board
+	BOX_SIZE = 3;           // Width and height of the inner boxes
+	EMPTY = "";             // Empty cell marker
+	BLANK = 0x0;
+	ONES = 0x3fe;			//	Binary 1111111110
+	var InBlock = [];
+	var InRow = [];
+	var InCol = [];
+	var board = [];			// Board of 81 cells
+
+	var Block = [];			// 3x3 block of cells
+	var Row = [];			// Row of 9 cells
+	var Col = [];			// Column of 9 cells
+	var Seq = []; 			// Sequence of blank cells
+	var SeqPos = 0; 		// Points to blank cells
+
+
+
+    function nextfield(me){
+    	var vnum=/[1-9]/;
+        var elements=document.getElementsByTagName("input");
+			for (i=0; i<elements.length; i++) {
+
+				if (elements[i]==me) {
+					break;
+					}
+			}
+		if (!elements[i].value.match(vnum)) {  
+
+					elements[i].value="";
+					elements[i].focus();
+		}	else	{
+        elements[i+1].focus();
+
+        }
+    }
+
+
+    function draw() {
+    	document.write('<table style="float:center">');
+    	for (var row=0; row<9; row++) {
+    		document.write('<tr>');
+    		for (var col=0; col<9; col++) {
+				document.write('<td><input type="text" size="2" maxlength="1" style="font-size:20px" onkeyup="nextfield(this)"/></td>');
+			}
+			document.write('</tr>');
+    	}
+    	document.write('</table>');
+    }
+
+
+	function setup() {
+			board = document.getElementsByTagName("input");
+     		for (var i=0; i<81; i++) {
+     			var Square = i;
+     			InRow[Square] = (Math.floor(Square / BOARD_SIZE));
+     			InCol[Square] = (Square % BOARD_SIZE);
+     			InBlock[Square] = ((Math.floor(Square/27) ) * 3)  + (Math.floor((Square % BOARD_SIZE) / 3));	  		
+     		}	   
+
+            for (var i=0; i<9; i++) {
+            	Block[i] = ONES;
+            	Row[i] = ONES;
+            	Col[i] = ONES;
+		  	}
+
+		}
+
+	function bitcount(b){
+		b=b>>>1;
+		var count = 0;
+		while (b) {
+			b= (b >>> 1);
+			count++;
+		}
+		return count;
+	}
+
+	function removeValbit(c,v) {
+		Block[InBlock[c]] &= ~v;
+		Row[InRow[c]] &= ~v;
+		Col[InCol[c]] &= ~v;
+	}
+
+	function test(SeqNum) {
+
+		if (SeqNum>=Seq.length) return true;	//Solved
+
+		var index = Seq[SeqNum];
+
+		var possibles = Block[InBlock[index]] & Row[InRow[index]] & Col[InCol[index]];
+
+		while (possibles) {
+
+			var valbit = possibles & (-possibles);
+			possibles &= ~valbit;
+
+			board[index].value = bitcount(valbit);
+
+			removeValbit(index, valbit);
+
+			if (test(SeqNum+1)) return true;
+
+			Block[InBlock[index]] |= valbit;
+			Row[InRow[index]] |= valbit;
+			Col[InCol[index]] |= valbit;
+			}
+		return false;		 	
+	  }		
+
+
+	function solve () {      
+		setup();
+		for (var i=0; i<81; i++) {
+			if (board[i].value!=EMPTY) {
+				var valbit2=1<<(board[i].value);
+				removeValbit(i,valbit2);
+			} else {
+				Seq[Seq.length]=i;
+			}
+		}
+
+		if (!test(0))
+			alert("Cannot find solution");     
+	}             
+
+draw();
+
+</script>
+<p><button type="button" onclick="solve();">Solve!</button></p>
+    </div>
+    <a href="/page/sudoku/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
+  </div>
+</div>
+
+        </div>
+      
     </section>
     </article>
 

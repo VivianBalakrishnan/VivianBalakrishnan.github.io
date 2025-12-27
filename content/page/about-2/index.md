@@ -2,7 +2,7 @@
 title: CV
 author: Vivian.Balakrishnan
 type: page
-order: 10
+weight: 10
 ---
 <p>Vivian Balakrishnan is the Foreign Minister of  Singapore. He is also the Minister-in-charge of the Smart Nation initiative.</p>
 <p>He has been a Member of Parliament since 2001. He has previously served as the Minister for the Environment and Water Resources; Minister for Community Development, Youth and Sports; 2nd Minister for Trade and Industry; Minister responsible for Entrepreneurship; 2nd Minister for Information Communications and the Arts; and Minister of State for National Development.</p>

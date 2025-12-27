@@ -2,6 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/page/about-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/page/family-history-and-values/</loc>
+  </url><url>
+    <loc>http://localhost:1313/page/why-politics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/page/sudoku/</loc>
+  </url><url>
     <loc>http://localhost:1313/post/</loc>
     <lastmod>2025-03-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -781,8 +789,6 @@
   </url><url>
     <loc>http://localhost:1313/2010/04/01/being-a-dad-for-life/</loc>
     <lastmod>2010-04-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/page/about-2/</loc>
   </url><url>
     <loc>http://localhost:1313/page/</loc>
   </url>

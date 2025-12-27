@@ -1,4 +1,4 @@
-{{ $posts := (.Site.GetPage "section" "post").Paginator.Pages }}
+{{ $posts := .Paginator.Pages }}
 
 <section class="flex-ns mt5 flex-wrap justify-around">
   {{/*

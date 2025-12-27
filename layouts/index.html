@@ -4,8 +4,10 @@
   {{ if site.Params.page_links.enabled }}
     {{ partial "page-links.html" . }}
   {{ end }}
-
-  {{ partialCached "facebook-embed.html" . }}
+  
+  {{ if or (not .Paginator) (eq .Paginator.PageNumber 1) }}
+    {{ partialCached "facebook-embed.html" . }}
+  {{ end }}
 
   <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links
     {{ $.Param "text_color" | compare.Default "mid-gray" }}">

@@ -1,7 +1,24 @@
 .DS_Store
 **/.DS_Store
 <<<<<<< HEAD
+<<<<<<< HEAD
 public
 =======
 /public
 >>>>>>> refactor
+=======
+/public/
+/resources/_gen/
+hugo_stats.json
+
+hugo.darwin
+hugo.linux
+hugo.exe
+
+/node_modules/
+vendor/
+
+*.swp
+*.swo
+.hugo_build.lock
+>>>>>>> 260ea73 (clean up)

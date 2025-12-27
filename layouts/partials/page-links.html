@@ -1,0 +1,12 @@
+{{ $pages := sort (where site.RegularPages "Type" "page") "Weight" }}
+
+{{ if gt (len $pages) 0 }}
+<nav class="tc pv3 bb b--light-gray">
+  {{ range first (site.Params.page_links.limit | default 5) $pages }}
+    <a href="{{ .RelPermalink }}"
+       class="link dim mh3 f5 f4-ns fw5 mid-gray">
+      {{ .Title }}
+    </a>
+  {{ end }}
+</nav>
+{{ end }}

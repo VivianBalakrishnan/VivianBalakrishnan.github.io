@@ -1,32 +1,22 @@
 {{ define "main" }}
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    <div class="tc pv4">
-      <div id="fb-root"></div>
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0"></script>
-      <div class="fb-page" 
-           data-href="https://www.facebook.com/Vivian.Balakrishnan.Sg" 
-           data-tabs="timeline" 
-           data-width="500" 
-           data-height="500" 
-           data-small-header="false" 
-           data-adapt-container-width="true" 
-           data-hide-cover="false" 
-           data-show-facepile="true">
-        <blockquote cite="https://www.facebook.com/Vivian.Balakrishnan.Sg" class="fb-xfbml-parse-ignore">
-          <a href="https://www.facebook.com/Vivian.Balakrishnan.Sg">Vivian Balakrishnan</a>
-        </blockquote>
-      </div>
-    </div>
-    <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
-      {{- .Content -}}
-    </section>
-    <section class="flex-ns mt5 flex-wrap justify-around">
-      {{ range .Paginator.Pages }}
-        <div class="w-100 w-30-l mb4 relative bg-white">
-          {{ .Render "summary" }}
-        </div>
-      {{ end }}
-    </section>{{/* former internal template */}}
-    {{ partial "pagination.html" . -}}
-  </article>
+<article class="pa3 pa4-ns nested-copy-line-height">
+
+  {{ if site.Params.page_links.enabled }}
+    {{ partial "page-links.html" . }}
+  {{ end }}
+  
+  {{ if or (not .Paginator) (eq .Paginator.PageNumber 1) }}
+    {{ partialCached "facebook-embed.html" . }}
+  {{ end }}
+
+  <section class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy nested-links
+    {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    {{ .Content }}
+  </section>
+
+  {{ partial "home-posts.html" . }}
+
+  {{ partial "pagination.html" . }}
+
+</article>
 {{ end }}

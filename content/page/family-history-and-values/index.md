@@ -1,8 +1,8 @@
 ---
 title: Family history and values
 author: Vivian Balakrishnan
-layout: page
-order: 35
+type: page
+weight: 35
 ---
 <p>This is an excerpt of a speech I made in Parliament on 5 March 2008. It explains how my values and attitudes have been shaped by my mother&#8217;s history. I must confess that it shapes my approach to policy.</p>
 

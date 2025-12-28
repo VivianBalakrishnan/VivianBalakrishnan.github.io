@@ -27,7 +27,7 @@ params:
     page: "Vivian.Balakrishnan.Sg"   # Facebook page username
     locale: "en_US"       # SDK locale
     max_width: 500        # maximum width on desktop
-    min_height: 400       # minimum height
+    min_height: 800       # minimum height
     smallHeader: false
     hideCover: false
     showFacepile: true

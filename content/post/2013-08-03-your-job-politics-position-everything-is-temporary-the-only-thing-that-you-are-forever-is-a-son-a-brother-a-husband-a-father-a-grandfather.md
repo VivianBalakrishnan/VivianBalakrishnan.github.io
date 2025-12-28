@@ -1,9 +1,9 @@
 ---
 author: Vivian.Balakrishnan
 categories:
-- Uncategorized
+  - family
 date: '2013-08-03T00:00:00Z'
-title: 'Your job, politics, position &#8211; everything is temporary. The only thing that you are forever, is a son, a brother, a husband, a father, a grandfather'
+title: 'Your job, politics, position, everything is temporary. The only thing that you are forever, is a son, a brother, a husband, a father, a grandfather'
 url: /2013/08/03/your-job-politics-position-everything-is-temporary-the-only-thing-that-you-are-forever-is-a-son-a-brother-a-husband-a-father-a-grandfather/
 ---
 <p><img src="http://vivian.balakrishnan.sg/wp-content/uploads/2013/08/Family.jpeg" alt="Family" />Edited excerpts of an interview by Elgin Toh of the Straits Times that was published at http://www.singapolitics.sg/supperclub</p>

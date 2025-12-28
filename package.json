@@ -1,0 +1,10 @@
+{
+  "name": "vivian-balakrishnan-site",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "hugo && npx pagefind --site public"
+  },
+  "devDependencies": {
+    "pagefind": "^1.1.0"
+  }
+}

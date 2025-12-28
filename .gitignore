@@ -1,12 +1,5 @@
 .DS_Store
 **/.DS_Store
-<<<<<<< HEAD
-<<<<<<< HEAD
-public
-=======
-/public
->>>>>>> refactor
-=======
 /public/
 /resources/_gen/
 hugo_stats.json
@@ -21,4 +14,3 @@ vendor/
 *.swp
 *.swo
 .hugo_build.lock
->>>>>>> 260ea73 (clean up)

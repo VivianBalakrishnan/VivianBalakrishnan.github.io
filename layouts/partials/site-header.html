@@ -17,14 +17,6 @@
         {{ end }}
       </div>
     </div>
-    {{ if .IsHome }}
-    <div id="search" class="absolute bottom-1 right-1"></div>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            new PagefindUI({ element: "#search", showSubResults: true });
-        });
-    </script>
-    {{ end }}
   </header>
 {{ else }}
   <header class="relative">
@@ -41,13 +33,7 @@
         {{ end }}
       </div>
     </div>
-    {{ if .IsHome }}
-    <div id="search" class="absolute bottom-1 right-1"></div>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            new PagefindUI({ element: "#search", showSubResults: true });
-        });
-    </script>
-    {{ end }}
   </header>
 {{ end }}
+
+{{ partial "search-modal.html" . }}

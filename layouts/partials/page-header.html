@@ -17,23 +17,11 @@
         {{ end }}
       </div>
     </div>
-    <div id="search" class="absolute bottom-1 right-1"></div>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            new PagefindUI({ element: "#search", showSubResults: true });
-        });
-    </script>
   </header>
 {{ else }}
   <header class="relative">
     <div class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }}">
       {{ partials.Include "site-navigation.html" . }}
     </div>
-    <div id="search" class="absolute bottom-1 right-1"></div>
-    <script>
-        window.addEventListener('DOMContentLoaded', (event) => {
-            new PagefindUI({ element: "#search", showSubResults: true });
-        });
-    </script>
   </header>
 {{ end }}

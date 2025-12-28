@@ -2,6 +2,10 @@
 date: '2020-03-11T00:00:00Z'
 author: Vivian Balakrishnan
 title: Impact of COVID-19 on the world in March 2020 
+tags:
+- COVID19
+- viral video
+
 ---
 <html>
 <head>

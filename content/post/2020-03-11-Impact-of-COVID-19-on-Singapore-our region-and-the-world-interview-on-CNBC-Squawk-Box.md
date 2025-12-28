@@ -1,0 +1,36 @@
+---
+date: '2020-03-11T00:00:00Z'
+author: Vivian Balakrishnan
+title: Impact of COVID-19 on the world in March 2020 
+---
+<html>
+<head>
+  <title>Impact of COVID-19 on the world in March 2020 </title> 
+</head>
+<body>
+
+Interviewed on CNBC Squawk Box on the 11 March 2020.
+We were in the early stages of COVID-19 - a time of great uncertainty and fear.
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your embedded video player code -->
+  <div class="fb-video" data-href="https://www.facebook.com/Vivian.Balakrishnan.Sg/videos/655285165229616/" 
+    data-width="500" 
+    data-autoplay="true"
+    data-show-text="true">
+    
+  </div>
+
+  <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FVivian.Balakrishnan.Sg%2Fvideos%2F655285165229616%2F&show_text=false&width=560&t=0" width="560" height="314" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+
+</body>
+</html>
